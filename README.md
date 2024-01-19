@@ -13,7 +13,7 @@ A simple Todo List application built using React, Yarn, and Vite, allowing users
 
 **Technologies Used**
 
-- React
+- React (useRducer with useContext, useState)
 - Yarn
 - Vite
 - HTML
