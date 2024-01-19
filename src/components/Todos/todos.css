@@ -2,6 +2,81 @@
   box-sizing: border-box;
 }
 
+/* Style the todo-section" */
+
+.todo-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0e9e9;
+  height: 100vh;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+/* Style the header */
+.header {
+  background-color: #d01b0e;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+}
+.header form {
+  display: flex;
+  gap: 20px;
+}
+.list-container {
+  width: 100%;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+.header input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #0c0606;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
@@ -24,6 +99,18 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+ul .no_task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+ul .no_task img {
+  width: 50%;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
@@ -70,46 +157,24 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
-.header {
-  background-color: #d21b0e;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
+@media screen and (max-width: 580px) {
+  .todo-section {
+    align-items: start;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .todo-container {
+    width: 100%;
+  }
 }
 
-/* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the input */
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;  
-}
-
-/* Style the "Add" button */
-.addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-}
-
-.addBtn:hover {
-  background-color: #bbb;
+@media screen and (min-width: 580.01px) and (max-width: 900px) {
+  .todo-section {
+    align-items: center;
+    justify-content: start;
+    padding-top: 100px;
+  }
+  .todo-container {
+    width: 90%;
+  }
 }

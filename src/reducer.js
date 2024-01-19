@@ -27,7 +27,7 @@ export const todoReducer = (state, action) => {
               ...todo,
               isEdite: !todo.isEdite,
               discription: payload.editInputValu,
-            }            
+            };
           }
           return todo;
         }),

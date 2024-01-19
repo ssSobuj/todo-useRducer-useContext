@@ -1,0 +1,52 @@
+
+
+.list-container li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  height: 70px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.list-container li div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow-wrap: break-word;
+  gap: 10px;
+}
+.list-container li .todo-discription{
+  flex-basis: 340px;
+}
+
+.list-container li div input {
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #d21b0e;
+  border-radius: 5px;
+  flex-basis: 100%;
+}
+.list-container li div p {
+  font-size: 16px;
+}
+
+.list-container li div .icon {
+  padding: 2px;
+  font-size: 25px;
+  cursor: pointer;
+  /* border: 1px solid #d21b0e; */
+}
+
+.list-container li div .delete{
+  color: #d21b0e;
+}
+
+.lineTrugh {
+  text-decoration: line-through;
+}
